@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <!-- <script src="/JS/index.js"></script> -->
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a class="logo" href="index.html"><img src="/Pictures/logo.png" alt="" /></a>
+        <div class="nav-links" id="navlinks">
+            <img class="close-btn fa" src="/Pictures/Close-white.png" alt=""onclick="hidemenu()">
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">COURSES</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <img class="menu-btn fa" src="/Pictures/menu-white.png" alt="" onclick="showmenu()">
+      </nav>
+      <div class="textbox">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          aspernatur, sed perferendis, architecto autem, a porro impedit cumque
+          laboriosam minus eveniet reiciendis atque iure optio eius inventore
+          sint sequi vel?
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+    <script>   
+     var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.display ="block";
+        }
+        function hidemenu(){
+            navlinks.style.display ="none";
+        }
+        </script>
+  </body>
+</html>
